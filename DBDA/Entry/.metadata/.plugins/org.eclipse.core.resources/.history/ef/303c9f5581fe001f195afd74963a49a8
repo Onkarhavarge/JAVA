@@ -1,0 +1,21 @@
+
+public class Employee1 {
+	int salary;
+	int hrs;
+	
+	void get_info(int s,int w)
+	{
+		int salary=s;
+		int hrs=w;
+	}
+	void add_sal()
+	{
+		
+	}
+	public static void main(String[] args)
+	{
+		
+
+	}
+
+}

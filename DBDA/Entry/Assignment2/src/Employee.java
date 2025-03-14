@@ -1,0 +1,77 @@
+
+public abstract class Employee {
+
+	protected String name;
+	protected String address;
+	protected int age;
+	protected char gender;
+	protected float basicsal;
+	
+	public Employee(String name,String address, int age,char gender,float basicsal)
+	{
+		this.name=name;
+		this.address=address;
+		this.age=age;
+		this.gender=gender;
+		this.basicsal=basicsal;
+	}
+	public void display()
+	{
+		System.out.println("Name :"+this.name);
+		System.out.println("Address :"+this.address);
+		System.out.println("Age :"+this.age);
+		System.out.println("Gender :"+this.gender);
+		System.out.println("Basicsal :"+this.basicsal);
+		
+	}
+
+//	public void display()
+//	{
+//		System.out.println("This is display");
+//		
+//	}
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getAddress() {
+		return address;
+	}
+
+	public void setAddress(String address) {
+		this.address = address;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		if(age< 18 || age>60)
+			this.age = -1;
+		else
+			this.age=age;
+	}
+
+	public char getGender() {
+		return gender;
+	}
+
+	public void setGender(char gender) {
+		this.gender = gender;
+	}
+
+	public float getBasicsal() {
+		return basicsal;
+	}
+
+	public void setBasicsal(float basicsal) {
+		this.basicsal = basicsal;
+	}
+	
+	
+}

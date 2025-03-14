@@ -1,0 +1,26 @@
+ class rectangle {
+	 
+	 int side1;
+	 int side2;
+	 int sidea;
+	 int sideb;
+	 
+	 rectangle (int side1, int side2 ,int sidea, int sideb)
+	 {
+		 this.side1=side1;
+		 this.side2=side2;
+		 this.sidea=sidea;
+		 this.sideb=sideb;
+	 }
+	  
+	 void area()
+	 {
+		 float area1=side1*side2
+	 }
+	 
+	public static void main(String[] args) {
+		
+
+	}
+
+}

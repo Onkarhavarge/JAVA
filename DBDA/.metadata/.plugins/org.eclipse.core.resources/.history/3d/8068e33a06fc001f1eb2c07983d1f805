@@ -1,0 +1,16 @@
+
+public class Ass5 {
+
+	public static void main(String[] args) {
+		System.out.println("Enter Seconds  :");
+		int sec=ConsoleInput.getInteger();
+		
+		int Hour=(sec / 3600);
+		int remsec=sec % 3600;
+		int Min=(remsec /60);
+		int second=(Min/60);
+
+		System.out.println("Time is :"+ Hour +"/" +Min +"/" +sec);
+	}
+
+}

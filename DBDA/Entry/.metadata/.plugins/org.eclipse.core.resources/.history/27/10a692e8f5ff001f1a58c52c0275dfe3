@@ -1,0 +1,164 @@
+
+public class Entry {
+
+	public static void main(String[] args) {
+		Employee[] arrEmployee = new Employee[50];
+		int index = 0;
+		int choice = 0;
+		int option = 0;
+//		final int ADD = 1;
+		final int Display = 2;
+		final int Sort = 3;
+		final int Exit = 6;
+
+		while (choice != 6) {
+
+			System.out.println("1. Add");
+			System.out.println("2. Display");
+			System.out.println("3. Sort");
+			System.out.println("4. Save to file");
+			System.out.println("5. Load from file");
+			System.out.println("6. Exit");
+
+			System.out.println("Enter your choice :");
+			choice = ConsoleInput.getInteger();
+			System.out.println("choice:" + choice);
+			switch (choice) {
+			case 1: {
+				System.out.println("Enter what you want to add :");
+				System.out.println("1 . Manager");
+				System.out.println("2 . Engineer");
+				System.out.println("3 . Saleperson");
+				System.out.println("4 . Exit");
+				System.out.println("Enter your choice :");
+				option = ConsoleInput.getInteger();
+				
+				while (option != 4) {
+
+					String name = null;
+					float basicsal = 0.0f;
+					char gender = ' ';
+					int age = 0;
+					String address = null;
+
+					if (option != 4) {
+
+						System.out.println("Enter name :");
+						name = ConsoleInput.getString();
+
+						System.out.println("Enter Addresss : ");
+						address = ConsoleInput.getString();
+
+						System.out.println("Enter age : ");
+						age = ConsoleInput.getInteger();
+
+						System.out.println("Enter gender :");
+						gender = ConsoleInput.getChar();
+
+						System.out.println("Enter basic Salary :");
+						basicsal = ConsoleInput.getFloat();
+					}
+
+					switch (option) {
+					case 1: {
+						System.out.println("Enter Hra :");
+						float hra = ConsoleInput.getFloat();
+
+						arrEmployee[index++] = new Manager(name, address, age, gender, basicsal, hra);
+						System.out.println("Record added...");
+					}
+						break;
+					case 2: {
+						System.out.println("Enter overtime :");
+						float overtime = ConsoleInput.getFloat();
+
+						arrEmployee[index++] = new Engineer(name, address, age, gender, basicsal, overtime);
+						System.out.println("Record added...");
+					}
+						break;
+					case 3: {
+						System.out.println("Enter commision:");
+						float commision = ConsoleInput.getFloat();
+
+						arrEmployee[index++] = new Salesperson(name, address, age, gender, basicsal, commision);
+						System.out.println("Record added...");
+					}
+						break;
+					case 4: {
+
+						break;
+					}
+					default: {
+						System.out.println("Opps enter correct choice ..");
+					}
+						break;
+					}
+
+				}
+			}
+				break;
+			case Display: {
+
+				for (int temp = 0; temp < index; temp++) {
+
+					System.out.println("--------------------------------------------------");
+					arrEmployee[temp].display();
+
+					System.out.println("--------------------------------------------------");
+				}
+
+//				for (int temp = 0; temp < index; temp++) {
+//					if (arrEmployee[temp] instanceof Manager) {
+//						System.out.println("Name :" + arrEmployee[temp].getName());
+//						System.out.println("Address :" + arrEmployee[temp].getAddress());
+//						System.out.println("Age :" + arrEmployee[temp].getAge());
+//						System.out.println("Gender :" + arrEmployee[temp].getGender());
+//						System.out.println("Basic Salary :" + arrEmployee[temp].getBasicsal());
+//
+//						Manager objManager = (Manager) arrEmployee[temp];
+//						System.out.println("Hra :" + objManager.getHra());
+//					}
+//				}
+//				for (int temp = 0; temp < index; temp++) {
+//					if (arrEmployee[temp] instanceof Engineer) {
+//						System.out.println("Name :" + arrEmployee[temp].getName());
+//						System.out.println("Address :" + arrEmployee[temp].getAddress());
+//						System.out.println("Age :" + arrEmployee[temp].getAge());
+//						System.out.println("Gender :" + arrEmployee[temp].getGender());
+//						System.out.println("Basic Salary :" + arrEmployee[temp].getBasicsal());
+//					
+//						
+//						Engineer objEngineer = (Engineer) arrEmployee[temp];
+//						System.out.println("Overtime :" + objEngineer.getOvertime());
+//					}
+//				}
+//				for (int temp = 0; temp < index; temp++) {
+//					if (arrEmployee[temp] instanceof Salesperson) {
+//						System.out.println("Name :" + arrEmployee[temp].getName());
+//						System.out.println("Address :" + arrEmployee[temp].getAddress());
+//						System.out.println("Age :" + arrEmployee[temp].getAge());
+//						System.out.println("Gender :" + arrEmployee[temp].getGender());
+//						System.out.println("Basic Salary :" + arrEmployee[temp].getBasicsal());
+//
+//						
+//						
+//						Salesperson objSalesperson = (Salesperson) arrEmployee[temp];
+//						System.out.println("Commision :" + objSalesperson.getCommision());
+//					}
+//				}
+
+			}
+				break;
+			case Sort:
+				System.out.println("EXit ..........");
+				break;
+			case Exit:
+				System.out.println("EXit ..........");
+				break;
+
+			}
+
+		}
+	}
+
+}

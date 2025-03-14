@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+public class Employee1 {
+	
+	
+	
+	int salary;
+	int hrs;
+	
+	
+	
+	void get_info(int s,int w)
+	{
+		Scanner scanner = new Scanner(System.in);
+		int salary=s;
+		int hrs=w;
+	}
+	void add_sal(int sal)
+	{
+		System.out.println("Enter sal:"+sal);
+		if (sal <= 500)
+		{
+			sal+=10;
+		}
+	}
+	public static void main(String[] args)
+	{
+		Employee1 	
+		
+	}
+
+}

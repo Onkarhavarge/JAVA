@@ -1,0 +1,77 @@
+package inheritance;
+
+public class Member {
+	String name;
+	int age;
+	String phone_no;
+	String Add;
+	int sal;
+	
+	
+	void printSalary(int sal)
+	{
+		this.sal=sal;
+	}
+	void Display()
+	{
+		System.out.println("Name :"+name);
+		System.out.println("Age :"+age);
+		System.out.println("Phone_no :"+phone_no);
+		System.out.println("Address :"+Add);
+		System.out.println("Salary :"+sal);
+		
+	}
+	Member mem1=new Member();
+
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getAge() {
+		return age;
+	}
+
+	public void setAge(int age) {
+		this.age = age;
+	}
+
+	public String getPhone_no() {
+		return phone_no;
+	}
+
+	public void setPhone_no(String phone_no) {
+		this.phone_no = phone_no;
+	}
+
+	public String getAdd() {
+		return Add;
+	}
+
+	public void setAdd(String add) {
+		Add = add;
+	}
+
+	public int getSal() {
+		return sal;
+	}
+
+	public void setSal(int sal) {
+		this.sal = sal;
+	}
+
+	public Member getMem1() {
+		return mem1;
+	}
+
+	public void setMem1(Member mem1) {
+		this.mem1 = mem1;
+	}
+	
+	
+
+}

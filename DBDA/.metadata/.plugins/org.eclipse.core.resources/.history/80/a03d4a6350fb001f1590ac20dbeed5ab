@@ -1,0 +1,52 @@
+
+public class Calculator {
+
+	public static void main(String[] args) {
+		int choice=0;
+		
+		do {
+	
+		System.out.println("1. Addition of two integer ");
+		System.out.println("2. Addition of two Float ");
+		System.out.println("3. Substract two integer ");
+		System.out.println("4. Substract two Float ");
+		System.out.println("5. Multiplication of two integer ");
+		System.out.println("6. Multiplication of two integer ");
+		System.out.println("7 . Divide two integer ");
+		System.out.println("8. Divide two integer ");
+		
+		System.out.println("Enter your choice :");
+		choice=ConsoleInput.getInteger();
+		}while(choice >8);
+		
+		switch(choice)
+		{
+		case 1:
+		{
+			System.out.println("Enter the float value:");
+			int Firstnum = ConsoleInput.getInteger();
+			System.out.println("Enter the float value:");
+			int Secondnum = ConsoleInput.getInteger();
+			Calci objCalculator = new Calci();
+			int result = objCalculator.add(Firstnum, Secondnum);
+			System.out.println("Result is :"+result);
+			break;
+		}
+		case 2:
+		{
+			System.out.println("Enter the float value:");
+			float Firstnum1 = ConsoleInput.getFloat();
+			System.out.println("Enter the float value:");
+			float Secondnum1 = ConsoleInput.getFloat();
+			Calci objCalculator1 = new Calci();
+			float result1 = objCalculator1.add(Firstnum1, Secondnum1);
+			System.out.println("Result is :"+result1);
+			break;
+		}
+		}
+		
+		
+		
+	}
+
+}

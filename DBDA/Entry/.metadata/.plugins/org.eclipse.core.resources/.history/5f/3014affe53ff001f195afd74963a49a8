@@ -1,0 +1,76 @@
+
+public class Ass9 {
+
+	public static void main(String[] args) {
+
+		System.out.println("1 . Addition");
+		System.out.println("2 . Substract");
+		System.out.println("3 . multiplication");
+		System.out.println("4 . division");
+		System.out.println("5 . Square");
+		System.out.println("6. Cube");
+		System.out.println("7. Exit");
+
+		System.out.println("Enter choice :");
+		int choice = ConsoleInput.getInteger();
+
+		System.out.println("Enter no1: ");
+		int no1 = ConsoleInput.getInteger();
+
+		System.out.println("Enter no2: ");
+		int no2 = ConsoleInput.getInteger();
+
+		boolean flag = true;
+
+		while (flag == true) {
+			switch (choice) {
+			case 1: {
+				int Add = no1 + no2;
+				System.out.println("Addition of two no is :" + Add);
+			}
+				break;
+			case 2: {
+				int Substraction = no1 - no2;
+				System.out.println("Addition of two no is :" + Substraction);
+			}
+				break;
+			case 3: {
+				int Multiplication = no1 * no2;
+				System.out.println("Addition of two no is :" + Multiplication);
+			}
+				break;
+			case 4: {
+				int Divide = no1 / no2;
+				if (no2 == 0)
+					System.out.println("Can not divide by zero");
+				else
+					System.out.println("Addition of two no is :" + Divide);
+			}
+				break;
+			case 5: {
+				System.out.println("Enter no to square : ");
+				int no = ConsoleInput.getInteger();
+
+				int Square = no * no;
+				System.out.println("Addition of two no is :" + Square);
+			}
+				break;
+			case 6: {
+				System.out.println("Enter no to Cube : ");
+				int no = ConsoleInput.getInteger();
+
+				int Cube = no * no * no;
+				System.out.println("Addition of two no is :" + Cube);
+			}
+				break;
+			case 7: {
+				flag = false;
+			}
+
+			}
+
+		}
+
+	}
+
+}

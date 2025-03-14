@@ -1,0 +1,19 @@
+
+public class Entry {
+
+	public static void main(String[] args) 
+	{
+		try
+		{
+			byte [] arrInput = new byte [100];
+			System.out.println("Enter the value = ");
+			System.in.read(arrInput);
+			System.out.println(arrInput);
+		}
+		catch(Exception e)
+		{
+			
+		}
+	}
+
+}

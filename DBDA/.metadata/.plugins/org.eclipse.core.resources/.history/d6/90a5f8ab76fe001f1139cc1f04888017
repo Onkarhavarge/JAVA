@@ -1,0 +1,36 @@
+ class rectangle {
+	 
+	 int side1;
+	 int side2;
+	 float sidea;
+	 float sideb;
+	 
+	 rectangle (int side1, int side2 )
+	 {
+		 this.side1=side1;
+		 this.side2=side2;
+		
+	 }
+	  
+	 rectangle (float sidea, float sideb)
+	 {
+		 this.sidea=sidea;
+		 this.sideb=sideb;
+	 }
+	 void area()
+	 {
+		 float area1=side1*side2;
+		     System.out.println("area of 1st rectangle : " + area1);
+		 float area2=sidea*sideb;
+		 System.out.println("area of 2st rectangle : " + area2);
+	 }
+	 
+	public static void main(String[] args) {
+		   rectangle rect1 = new rectangle(6,7);
+		   rectangle rect2 = new rectangle(15,10);
+		   rect1.area();
+		   rect2.area();
+
+	}
+
+}

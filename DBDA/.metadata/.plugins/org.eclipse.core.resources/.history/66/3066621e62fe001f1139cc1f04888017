@@ -1,0 +1,36 @@
+
+public class complex {
+
+	int no1;
+	int no2;
+	int img1;
+	int img2;
+	
+	complex(int no1 , int no2,int img1,int img2)
+	{
+		this.no1=no1;
+		this.no2=no2;
+		this.img1=img1;
+		this.img2=img2;
+		
+	}
+     
+	 void sum(){
+		int sum = no1+no2;
+		System.out.println("sum is : " +sum);
+		int img_sum = img1+img2;
+		System.out.println("sum of img : " +img_sum +"i");
+	}
+	
+	  void display() {
+		  
+	  } 
+	  
+	  public static void main(String[] args) {
+		
+		  
+		
+
+	}
+
+}
